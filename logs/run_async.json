@@ -1,0 +1,33 @@
+{
+  "mode": "ASYNC",
+  "duration_secs": 90,
+  "total_processed": 1725,
+  "overflow_count": 0,
+  "shed_count": 839,
+  "latency_p50_us": 18,
+  "latency_p90_us": 53,
+  "latency_p99_us": 16062,
+  "latency_max_us": 40060,
+  "drift": {
+    "T1 human+main": {"p50": 0, "p90": 29, "p99": 8032, "count": 486},
+    "T2 human+main(minor)": {"p50": 0, "p90": 28, "p99": 16032, "count": 80},
+    "T3 human+other": {"p50": 0, "p90": 29, "p99": 16050, "count": 689},
+    "T4 bot": {"p50": 0, "p90": 43, "p99": 16056, "count": 444},
+    "T5 bot(minor)": {"p50": 0, "p90": 90, "p99": 20052, "count": 26}
+  },
+  "deadline": {
+    "T1 human+main": {"met": 443, "total": 486},
+    "T2 human+main(minor)": {"met": 75, "total": 80},
+    "T3 human+other": {"met": 674, "total": 689},
+    "T4 bot": {"met": 432, "total": 444},
+    "T5 bot(minor)": {"met": 25, "total": 26}
+  },
+  "mutex_contention": 3,
+  "mutex_inversions": 2,
+  "mutex_avg_wait_us": 18,
+  "rwlock_contention": 8,
+  "rwlock_inversions": 2,
+  "rwlock_avg_wait_us": 9,
+  "watchdog_triggers": 0,
+  "hot_path_allocs": 0
+}
