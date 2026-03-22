@@ -45,6 +45,23 @@ pub fn compare_runs(file1: &str, file2: &str) {
     compare_row_int("RwLock contention", get(&r1, "rwlock_contention"), get(&r2, "rwlock_contention"), mode1, mode2, true);
     println!();
 
+    // Leaderboard comparison (Component D: shared resource)
+    println!("\x1b[36m{:<30} {:>12} {:>12}\x1b[0m", "LEADERBOARD", mode1, mode2);
+    println!("{}", "─".repeat(68));
+    let empty_vec = vec![];
+    let lb1 = r1["leaderboard"].as_array().unwrap_or(&empty_vec);
+    let lb2 = r2["leaderboard"].as_array().unwrap_or(&empty_vec);
+    let max_len = lb1.len().max(lb2.len()).min(5);
+    for i in 0..max_len {
+        let d1 = lb1.get(i).map(|v| format!("{} ({})",
+            v["domain"].as_str().unwrap_or("-"), v["edits"].as_u64().unwrap_or(0)));
+        let d2 = lb2.get(i).map(|v| format!("{} ({})",
+            v["domain"].as_str().unwrap_or("-"), v["edits"].as_u64().unwrap_or(0)));
+        println!("  {}. {:>30}  {:>30}",
+            i + 1, d1.unwrap_or_else(|| "-".to_string()), d2.unwrap_or_else(|| "-".to_string()));
+    }
+    println!();
+
     let p99_1 = get(&r1, "latency_p99_us");
     let p99_2 = get(&r2, "latency_p99_us");
     let throughput_1 = get(&r1, "total_processed");
@@ -58,9 +75,10 @@ pub fn compare_runs(file1: &str, file2: &str) {
     println!("  p99 latency: {} ({:.2}ms) vs {} ({:.2}ms)",
         tail_winner, p99_1.min(p99_2) as f64 / 1000.0,
         tail_loser, p99_1.max(p99_2) as f64 / 1000.0);
-    println!("  Throughput:  {} ({} vs {})",
-        throughput_winner,
-        throughput_1.max(throughput_2), throughput_1.min(throughput_2));
+    let throughput_loser = if throughput_1 > throughput_2 { mode2 } else { mode1 };
+    println!("  Throughput:  {} ({}) vs {} ({})",
+        throughput_winner, throughput_1.max(throughput_2),
+        throughput_loser, throughput_1.min(throughput_2));
 
     println!("\n\x1b[33m═══════════════════════════════════════════════════════════════════\x1b[0m");
 }
@@ -69,14 +87,13 @@ pub fn compare_runs(file1: &str, file2: &str) {
 fn compare_row_us(label: &str, v1: u64, v2: u64, m1: &str, m2: &str, lower_is_better: bool) {
     let ms1 = format!("{:.2}ms", v1 as f64 / 1000.0);
     let ms2 = format!("{:.2}ms", v2 as f64 / 1000.0);
-    let winner = if v1 == v2 {
+    // Use displayed values for tie detection so 0.02 vs 0.02 shows Tie, not a misleading %
+    let winner = if ms1 == ms2 {
         "Tie".to_string()
     } else if (lower_is_better && v1 < v2) || (!lower_is_better && v1 > v2) {
-        let pct = ((v2 as f64 - v1 as f64) / v2 as f64 * 100.0).abs();
-        format!("{} -{:.0}%", m1, pct)
+        m1.to_string()
     } else {
-        let pct = ((v1 as f64 - v2 as f64) / v1 as f64 * 100.0).abs();
-        format!("{} -{:.0}%", m2, pct)
+        m2.to_string()
     };
     println!("  {:<28} {:>12} {:>12} {:>12}", label, ms1, ms2, winner);
 }
@@ -86,11 +103,9 @@ fn compare_row_int(label: &str, v1: u64, v2: u64, m1: &str, m2: &str, lower_is_b
     let winner = if v1 == v2 {
         "Tie".to_string()
     } else if (lower_is_better && v1 < v2) || (!lower_is_better && v1 > v2) {
-        let pct = ((v2 as f64 - v1 as f64) / v2 as f64 * 100.0).abs();
-        format!("{} -{:.0}%", m1, pct)
+        m1.to_string()
     } else {
-        let pct = ((v1 as f64 - v2 as f64) / v1 as f64 * 100.0).abs();
-        format!("{} -{:.0}%", m2, pct)
+        m2.to_string()
     };
     println!("  {:<28} {:>12} {:>12} {:>12}", label, v1, v2, winner);
 }

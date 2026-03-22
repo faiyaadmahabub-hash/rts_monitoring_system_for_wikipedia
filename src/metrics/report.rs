@@ -133,7 +133,15 @@ pub fn export_json(mode: PipelineMode, duration: u64, collector: &MetricsCollect
     json.push_str(&format!("  \"rwlock_inversions\": {},\n", snap.rwlock_inversions));
     json.push_str(&format!("  \"rwlock_avg_wait_us\": {},\n", snap.rwlock_avg_wait_us));
     json.push_str(&format!("  \"watchdog_triggers\": {},\n", snap.watchdog_triggers));
-    json.push_str(&format!("  \"hot_path_allocs\": {}\n", snap.hot_path_allocs));
+    json.push_str(&format!("  \"hot_path_allocs\": {},\n", snap.hot_path_allocs));
+
+    json.push_str("  \"leaderboard\": [\n");
+    for (i, (domain, count)) in snap.top_domains.iter().enumerate() {
+        json.push_str(&format!("    {{\"domain\": \"{}\", \"edits\": {}}}",
+            domain, count));
+        if i < snap.top_domains.len() - 1 { json.push_str(",\n"); } else { json.push('\n'); }
+    }
+    json.push_str("  ]\n");
     json.push_str("}\n");
 
     json
