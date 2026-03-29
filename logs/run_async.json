@@ -1,40 +1,40 @@
 {
   "mode": "ASYNC",
-  "duration_secs": 90,
-  "total_processed": 1771,
+  "duration_secs": 60,
+  "total_processed": 829,
   "overflow_count": 0,
-  "shed_count": 1108,
-  "latency_p50_us": 11,
-  "latency_p90_us": 23,
-  "latency_p99_us": 4019,
-  "latency_max_us": 8045,
+  "shed_count": 361,
+  "latency_p50_us": 20,
+  "latency_p90_us": 64,
+  "latency_p99_us": 4042,
+  "latency_max_us": 12800,
   "drift": {
-    "T1 human+main": {"p50": 0, "p90": 1, "p99": 19, "count": 385},
-    "T2 human+main(minor)": {"p50": 0, "p90": 0, "p99": 24, "count": 33},
-    "T3 human+other": {"p50": 0, "p90": 5, "p99": 15, "count": 965},
-    "T4 bot": {"p50": 0, "p90": 6, "p99": 29, "count": 359},
-    "T5 bot(minor)": {"p50": 0, "p90": 7, "p99": 11, "count": 29}
+    "T1 human+main": {"p50": 0, "p90": 6, "p99": 64, "count": 212},
+    "T2 human+main(minor)": {"p50": 0, "p90": 12, "p99": 89, "count": 67},
+    "T3 human+other": {"p50": 0, "p90": 1, "p99": 38, "count": 337},
+    "T4 bot": {"p50": 0, "p90": 0, "p99": 124, "count": 178},
+    "T5 bot(minor)": {"p50": 0, "p90": 12, "p99": 33, "count": 35}
   },
   "deadline": {
-    "T1 human+main": {"met": 365, "total": 385},
-    "T2 human+main(minor)": {"met": 31, "total": 33},
-    "T3 human+other": {"met": 962, "total": 965},
-    "T4 bot": {"met": 357, "total": 359},
-    "T5 bot(minor)": {"met": 29, "total": 29}
+    "T1 human+main": {"met": 198, "total": 212},
+    "T2 human+main(minor)": {"met": 63, "total": 67},
+    "T3 human+other": {"met": 336, "total": 337},
+    "T4 bot": {"met": 178, "total": 178},
+    "T5 bot(minor)": {"met": 35, "total": 35}
   },
-  "mutex_contention": 7,
+  "mutex_contention": 4,
   "mutex_inversions": 0,
   "mutex_avg_wait_us": 1,
-  "rwlock_contention": 8,
+  "rwlock_contention": 2,
   "rwlock_inversions": 0,
-  "rwlock_avg_wait_us": 1,
+  "rwlock_avg_wait_us": 10,
   "watchdog_triggers": 0,
   "hot_path_allocs": 0,
   "leaderboard": [
-    {"domain": "commons.wikimedia.org", "edits": 877},
-    {"domain": "en.wikipedia.org", "edits": 261},
-    {"domain": "www.wikidata.org", "edits": 130},
-    {"domain": "fr.wikipedia.org", "edits": 58},
-    {"domain": "de.wikipedia.org", "edits": 37}
+    {"domain": "commons.wikimedia.org", "edits": 217},
+    {"domain": "www.wikidata.org", "edits": 133},
+    {"domain": "en.wikipedia.org", "edits": 103},
+    {"domain": "ce.wikipedia.org", "edits": 57},
+    {"domain": "fr.wikipedia.org", "edits": 25}
   ]
 }
