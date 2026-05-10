@@ -1,45 +1,36 @@
-// allocator.rs — Custom GlobalAlloc wrapper that counts heap allocations
-// on the hot path, proving zero-copy parsing produces no heap activity.
-// Advanced Feature: Memory Mastery — proof via custom allocator.
+//! Custom global allocator that counts heap allocations for --heap-proof mode.
 
 use std::alloc::{GlobalAlloc, Layout, System};
-use std::sync::atomic::{AtomicBool, AtomicU64, Ordering};
+use std::sync::atomic::{AtomicU64, Ordering};
 
-pub static HOT_PATH_ACTIVE: AtomicBool = AtomicBool::new(false);
-pub static HOT_PATH_ALLOCS: AtomicU64 = AtomicU64::new(0);
-pub static TOTAL_HOT_PATH_CHECKS: AtomicU64 = AtomicU64::new(0);
+static ALLOC_COUNT: AtomicU64 = AtomicU64::new(0);
+static ALLOC_BYTES: AtomicU64 = AtomicU64::new(0);
 
-pub struct CountingAllocator;
+pub struct TrackingAllocator;
 
-unsafe impl GlobalAlloc for CountingAllocator {
-    /// Intercepts every heap allocation. Increments counter if hot path is active.
+unsafe impl GlobalAlloc for TrackingAllocator {
     unsafe fn alloc(&self, layout: Layout) -> *mut u8 {
-        if HOT_PATH_ACTIVE.load(Ordering::Relaxed) {
-            HOT_PATH_ALLOCS.fetch_add(1, Ordering::Relaxed);
-        }
-        unsafe { System.alloc(layout) }
+        ALLOC_COUNT.fetch_add(1, Ordering::Relaxed);
+        ALLOC_BYTES.fetch_add(layout.size() as u64, Ordering::Relaxed);
+        System.alloc(layout)
     }
 
-    /// Delegates deallocation to the system allocator.
     unsafe fn dealloc(&self, ptr: *mut u8, layout: Layout) {
-        unsafe { System.dealloc(ptr, layout) }
+        System.dealloc(ptr, layout)
+    }
+
+    unsafe fn realloc(&self, ptr: *mut u8, layout: Layout, new_size: usize) -> *mut u8 {
+        ALLOC_COUNT.fetch_add(1, Ordering::Relaxed);
+        if new_size > layout.size() {
+            ALLOC_BYTES.fetch_add((new_size - layout.size()) as u64, Ordering::Relaxed);
+        }
+        System.realloc(ptr, layout, new_size)
     }
 }
 
-/// Marks the start of a hot-path section. Resets alloc counter.
-pub fn begin_hot_path() {
-    TOTAL_HOT_PATH_CHECKS.fetch_add(1, Ordering::Relaxed);
-    HOT_PATH_ALLOCS.store(0, Ordering::Relaxed);
-    HOT_PATH_ACTIVE.store(true, Ordering::Release);
-}
-
-/// Marks the end of a hot-path section. Returns number of allocations observed.
-pub fn end_hot_path() -> u64 {
-    HOT_PATH_ACTIVE.store(false, Ordering::Release);
-    HOT_PATH_ALLOCS.load(Ordering::Relaxed)
-}
-
-/// Returns total number of hot-path verification checks performed.
-pub fn total_checks() -> u64 {
-    TOTAL_HOT_PATH_CHECKS.load(Ordering::Relaxed)
+pub fn snapshot() -> (u64, u64) {
+    (
+        ALLOC_COUNT.load(Ordering::Relaxed),
+        ALLOC_BYTES.load(Ordering::Relaxed),
+    )
 }

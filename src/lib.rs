@@ -1,11 +1,13 @@
-// lib.rs — Library crate root. Exposes modules for benchmarks.
-
 pub mod allocator;
-pub mod models;
-pub mod ingestion;
-pub mod parsing;
-pub mod scheduling;
-pub mod shared;
-pub mod watchdog;
+pub mod model;
 pub mod metrics;
-pub mod dashboard;
+pub mod state;
+pub mod logger;
+pub mod queue;
+pub mod leaderboard;
+pub mod watchdog;
+pub mod pipeline;
+pub mod ui;
+
+#[global_allocator]
+static ALLOCATOR: allocator::TrackingAllocator = allocator::TrackingAllocator;

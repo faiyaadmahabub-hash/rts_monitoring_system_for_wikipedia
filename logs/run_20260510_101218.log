@@ -1,0 +1,243 @@
+[INGEST]    Connecting to Wikipedia SSE stream...
+[HUMAN]    en.wikipedia.org | drift=0.30ms | exec=0.17ms | total=0.47ms | DEADLINE MET 
+[BOT  ]    commons.wikimedia.org | drift=1.17ms | exec=0.07ms | total=1.24ms | DEADLINE MET 
+[BOT  ]    commons.wikimedia.org | drift=0.33ms | exec=0.05ms | total=0.38ms | DEADLINE MET 
+[BOT  ]    en.wiktionary.org | drift=0.12ms | exec=0.04ms | total=0.16ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=6.35ms | exec=0.09ms | total=6.44ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=9.15ms | exec=0.10ms | total=9.25ms | DEADLINE MISS
+[BOT  ]    en.wiktionary.org | drift=9.69ms | exec=0.05ms | total=9.74ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=5.96ms | exec=0.11ms | total=6.07ms | DEADLINE MISS
+[HUMAN]    zh.wikipedia.org | drift=5.81ms | exec=0.05ms | total=5.86ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=5.61ms | exec=0.05ms | total=5.65ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=5.11ms | exec=0.06ms | total=5.16ms | DEADLINE MISS
+[BOT  ]    www.wikidata.org | drift=6.14ms | exec=0.06ms | total=6.20ms | DEADLINE MISS
+[BOT  ]    commons.wikimedia.org | drift=5.14ms | exec=0.07ms | total=5.22ms | DEADLINE MISS
+[BOT  ]    www.wikidata.org | drift=1.52ms | exec=0.07ms | total=1.59ms | DEADLINE MET 
+[BOT  ]    commons.wikimedia.org | drift=1.49ms | exec=0.11ms | total=1.60ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=2.67ms | exec=0.06ms | total=2.73ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=1.22ms | exec=0.06ms | total=1.28ms | DEADLINE MET 
+[BOT  ]    id.wikipedia.org | drift=1.81ms | exec=0.04ms | total=1.84ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=8.42ms | exec=0.06ms | total=8.49ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=4.97ms | exec=0.07ms | total=5.04ms | DEADLINE MISS
+[DEGRADED]  miss_rate=60% > 50% | Mode: DEGRADED (bot edits skipped)
+[HUMAN]    www.wikidata.org | drift=4.87ms | exec=0.07ms | total=4.94ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=2.09ms | exec=0.06ms | total=2.15ms | DEADLINE MISS
+[HUMAN]    vi.wikisource.org | drift=0.64ms | exec=0.05ms | total=0.68ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=0.46ms | exec=0.06ms | total=0.51ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=10.39ms | exec=0.12ms | total=10.51ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=1.48ms | exec=0.08ms | total=1.57ms | DEADLINE MET 
+[HUMAN]    ko.wikipedia.org | drift=0.06ms | exec=0.06ms | total=0.11ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=16.95ms | exec=0.18ms | total=17.13ms | DEADLINE MISS
+[HUMAN]    it.wikipedia.org | drift=1.26ms | exec=0.07ms | total=1.33ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.87ms | exec=0.05ms | total=0.92ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=12.38ms | exec=0.16ms | total=12.54ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=10.71ms | exec=0.19ms | total=10.91ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=0.63ms | exec=0.10ms | total=0.72ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.21ms | exec=0.13ms | total=0.34ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.30ms | exec=0.09ms | total=0.39ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=2.86ms | exec=0.07ms | total=2.93ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=1.12ms | exec=0.14ms | total=1.26ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=0.41ms | exec=0.07ms | total=0.49ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=0.01ms | exec=0.07ms | total=0.07ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=2.98ms | exec=0.09ms | total=3.07ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=1.19ms | exec=0.06ms | total=1.26ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=1.61ms | exec=0.06ms | total=1.67ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=1.86ms | exec=0.05ms | total=1.91ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.61ms | exec=0.17ms | total=0.78ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.24ms | exec=0.23ms | total=0.47ms | DEADLINE MET 
+[HUMAN]    zh.wikipedia.org | drift=3.06ms | exec=0.12ms | total=3.18ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=7.16ms | exec=0.29ms | total=7.45ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=11.49ms | exec=0.09ms | total=11.58ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=1.35ms | exec=0.09ms | total=1.45ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=0.50ms | exec=0.06ms | total=0.56ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=4.12ms | exec=0.09ms | total=4.21ms | DEADLINE MISS
+[HUMAN]    es.wikipedia.org | drift=3.68ms | exec=0.05ms | total=3.73ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=3.13ms | exec=0.07ms | total=3.21ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=2.50ms | exec=0.05ms | total=2.55ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=2.24ms | exec=0.03ms | total=2.27ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=0.76ms | exec=0.07ms | total=0.82ms | DEADLINE MET 
+[HUMAN]    ja.wikipedia.org | drift=0.24ms | exec=0.04ms | total=0.28ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=0.11ms | exec=0.03ms | total=0.15ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=1.96ms | exec=0.08ms | total=2.04ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=16.23ms | exec=0.09ms | total=16.32ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=2.47ms | exec=0.12ms | total=2.59ms | DEADLINE MISS
+[HUMAN]    ta.wikipedia.org | drift=1.61ms | exec=0.06ms | total=1.67ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=1.26ms | exec=0.07ms | total=1.34ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=0.52ms | exec=0.03ms | total=0.55ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=12.90ms | exec=0.14ms | total=13.04ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=0.09ms | exec=0.05ms | total=0.14ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=2.25ms | exec=0.36ms | total=2.61ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=1.34ms | exec=0.06ms | total=1.40ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=2.19ms | exec=0.06ms | total=2.25ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=3.47ms | exec=0.10ms | total=3.57ms | DEADLINE MISS
+[HUMAN]    ja.wikipedia.org | drift=1.52ms | exec=0.04ms | total=1.56ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=1.22ms | exec=0.03ms | total=1.26ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.80ms | exec=0.04ms | total=0.84ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=0.47ms | exec=0.03ms | total=0.50ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=2.17ms | exec=0.18ms | total=2.35ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=0.86ms | exec=0.12ms | total=0.98ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.42ms | exec=0.06ms | total=0.48ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=0.01ms | exec=0.04ms | total=0.04ms | DEADLINE MET 
+[HUMAN]    pt.wikipedia.org | drift=2.89ms | exec=0.26ms | total=3.15ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=0.72ms | exec=0.12ms | total=0.85ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=0.77ms | exec=0.08ms | total=0.85ms | DEADLINE MET 
+[HUMAN]    th.wikipedia.org | drift=0.28ms | exec=0.07ms | total=0.35ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=1.88ms | exec=0.16ms | total=2.04ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=0.55ms | exec=0.12ms | total=0.67ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.07ms | exec=0.10ms | total=0.17ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=7.45ms | exec=0.10ms | total=7.55ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=3.65ms | exec=0.06ms | total=3.72ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=1.34ms | exec=0.03ms | total=1.37ms | DEADLINE MET 
+[HUMAN]    pa.wikisource.org | drift=0.53ms | exec=0.05ms | total=0.58ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=6.26ms | exec=0.13ms | total=6.39ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=2.28ms | exec=0.14ms | total=2.42ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=1.73ms | exec=0.16ms | total=1.90ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=0.91ms | exec=0.14ms | total=1.05ms | DEADLINE MET 
+[HUMAN]    es.wikipedia.org | drift=0.18ms | exec=0.07ms | total=0.25ms | DEADLINE MET 
+[HUMAN]    ko.wikipedia.org | drift=0.84ms | exec=0.08ms | total=0.93ms | DEADLINE MET 
+[HUMAN]    fr.wikisource.org | drift=1.63ms | exec=0.07ms | total=1.70ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=7.62ms | exec=0.27ms | total=7.89ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=2.04ms | exec=0.08ms | total=2.12ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=0.94ms | exec=0.10ms | total=1.05ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.19ms | exec=0.11ms | total=0.30ms | DEADLINE MET 
+[HUMAN]    ms.wikipedia.org | drift=0.25ms | exec=0.05ms | total=0.30ms | DEADLINE MET 
+[HUMAN]    ko.wikipedia.org | drift=1.03ms | exec=0.04ms | total=1.07ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.77ms | exec=0.07ms | total=0.83ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=1.85ms | exec=0.09ms | total=1.94ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=1.32ms | exec=0.03ms | total=1.35ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=1.68ms | exec=0.03ms | total=1.71ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=1.37ms | exec=0.04ms | total=1.41ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=2.11ms | exec=0.07ms | total=2.18ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=1.95ms | exec=0.03ms | total=1.98ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=3.84ms | exec=0.06ms | total=3.90ms | DEADLINE MISS
+[HUMAN]    zh.wikipedia.org | drift=1.62ms | exec=0.12ms | total=1.74ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.76ms | exec=0.14ms | total=0.91ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=2.76ms | exec=0.09ms | total=2.85ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=2.30ms | exec=0.05ms | total=2.35ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=1.70ms | exec=0.07ms | total=1.77ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.57ms | exec=0.06ms | total=0.63ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=2.26ms | exec=0.08ms | total=2.34ms | DEADLINE MISS
+[HUMAN]    fr.wikipedia.org | drift=0.41ms | exec=0.03ms | total=0.44ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=10.11ms | exec=0.10ms | total=10.21ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=14.38ms | exec=0.17ms | total=14.55ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=8.91ms | exec=0.15ms | total=9.07ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=0.38ms | exec=0.27ms | total=0.65ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=5.42ms | exec=0.16ms | total=5.58ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=1.05ms | exec=0.15ms | total=1.20ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=1.49ms | exec=0.10ms | total=1.59ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=1.25ms | exec=0.08ms | total=1.33ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.22ms | exec=0.07ms | total=0.29ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=3.73ms | exec=0.22ms | total=3.96ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=3.30ms | exec=0.15ms | total=3.45ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=1.06ms | exec=0.05ms | total=1.11ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.74ms | exec=0.05ms | total=0.79ms | DEADLINE MET 
+[HUMAN]    zh.wikipedia.org | drift=2.21ms | exec=0.07ms | total=2.27ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=4.57ms | exec=0.09ms | total=4.66ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=0.15ms | exec=0.07ms | total=0.22ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=2.82ms | exec=0.06ms | total=2.88ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=2.58ms | exec=0.05ms | total=2.62ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=0.90ms | exec=0.02ms | total=0.93ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=1.94ms | exec=0.08ms | total=2.02ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=2.37ms | exec=0.07ms | total=2.44ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=0.34ms | exec=0.05ms | total=0.39ms | DEADLINE MET 
+[HUMAN]    ja.wikipedia.org | drift=0.95ms | exec=0.17ms | total=1.12ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=1.02ms | exec=0.12ms | total=1.14ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=0.39ms | exec=0.07ms | total=0.46ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=0.01ms | exec=0.07ms | total=0.08ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=2.44ms | exec=0.05ms | total=2.50ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=1.96ms | exec=0.08ms | total=2.05ms | DEADLINE MISS
+[OVERFLOW]  ts=10:12:34.801  dropped=bot  title=Q130570794  queue=100/100
+[OVERFLOW]  ts=10:12:34.801  dropped=bot  title=File:Dorpskerk SpijkenisseDSCF9727.JPG  queue=100/100
+[OVERFLOW]  ts=10:12:34.801  dropped=bot  title=File:Rukovodstvo k fizike 1884 (110439500).jpg  queue=100/100
+[HUMAN]    en.wikipedia.org | drift=1.21ms | exec=0.04ms | total=1.25ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=0.95ms | exec=0.04ms | total=0.98ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=3.17ms | exec=0.05ms | total=3.22ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=3.38ms | exec=0.10ms | total=3.48ms | DEADLINE MISS
+[OVERFLOW]  ts=10:12:35.017  dropped=bot  title=File:WRVM - hotel lobby 01.jpg  queue=100/100
+[OVERFLOW]  ts=10:12:35.018  dropped=bot  title=File:Caras del carnaval.jpg  queue=100/100
+[OVERFLOW]  ts=10:12:35.018  dropped=bot  title=File:Drehteller Sitzkarussell mit Hühnern, Spielplatz am Dichterweg, Dichterweg 30, Oberweimar, 99425 Weimar 01.jpg  queue=100/100
+[OVERFLOW]  ts=10:12:35.018  dropped=bot  title=Campionat del Món de motociclisme de 2024  queue=100/100
+[HUMAN]    ko.wikipedia.org | drift=1.15ms | exec=0.07ms | total=1.22ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=0.57ms | exec=0.05ms | total=0.63ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=1.73ms | exec=0.03ms | total=1.77ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=0.42ms | exec=0.03ms | total=0.44ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=4.27ms | exec=0.07ms | total=4.35ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=0.71ms | exec=0.05ms | total=0.76ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=2.27ms | exec=0.05ms | total=2.32ms | DEADLINE MISS
+[OVERFLOW]  ts=10:12:35.760  dropped=bot  title=File:Het gestoorde feest (titel op object) Imagerie Artistique Série 11 (serietitel op object), RP-P-OB-206.038.jpg  queue=100/100
+[OVERFLOW]  ts=10:12:35.762  dropped=bot  title=File:JR Chuo-Main-Line Shiozaki Station North Gates.jpg  queue=100/100
+[OVERFLOW]  ts=10:12:35.763  dropped=bot  title=freezable  queue=100/100
+[OVERFLOW]  ts=10:12:35.771  dropped=bot  title=File:Dorpskerk Spijkenisse DSCF9728.JPG  queue=100/100
+[OVERFLOW]  ts=10:12:35.774  dropped=bot  title=scioltamente  queue=100/100
+[HUMAN]    commons.wikimedia.org | drift=14.08ms | exec=0.11ms | total=14.19ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=12.70ms | exec=0.11ms | total=12.80ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=0.98ms | exec=0.09ms | total=1.06ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.12ms | exec=0.09ms | total=0.21ms | DEADLINE MET 
+[OVERFLOW]  ts=10:12:36.216  dropped=bot  title=Q19242885  queue=100/100
+[HUMAN]    en.wikipedia.org | drift=1.82ms | exec=0.05ms | total=1.87ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=1.50ms | exec=0.05ms | total=1.55ms | DEADLINE MET 
+[OVERFLOW]  ts=10:12:36.219  dropped=bot  title=scioperataggine  queue=100/100
+[HUMAN]    commons.wikimedia.org | drift=0.99ms | exec=0.07ms | total=1.06ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=0.79ms | exec=0.05ms | total=0.83ms | DEADLINE MET 
+[HUMAN]    vi.wiktionary.org | drift=0.02ms | exec=0.03ms | total=0.05ms | DEADLINE MET 
+[HUMAN]    no.wikipedia.org | drift=1.40ms | exec=0.05ms | total=1.45ms | DEADLINE MET 
+[OVERFLOW]  ts=10:12:36.760  dropped=bot  title=File:Nord Destiny at Vancouver - IMO 9363132 (5306250219).jpg  queue=100/100
+[OVERFLOW]  ts=10:12:36.761  dropped=bot  title=File:Dorpskerk Spijkenisse bouwkundige tekening (1935).jpg  queue=100/100
+[OVERFLOW]  ts=10:12:36.761  dropped=bot  title=Wikipedia:WikiProject Medicine/Discussions  queue=100/100
+[OVERFLOW]  ts=10:12:36.761  dropped=bot  title=Q9278605  queue=100/100
+[OVERFLOW]  ts=10:12:36.762  dropped=bot  title=File:USMC-060620-M-0008D-014.jpg  queue=100/100
+[OVERFLOW]  ts=10:12:36.763  dropped=bot  title=File:Management- Snow Operations (8620632116).jpg  queue=100/100
+[HUMAN]    en.wikipedia.org | drift=4.48ms | exec=0.05ms | total=4.53ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=2.60ms | exec=0.05ms | total=2.65ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=2.28ms | exec=0.05ms | total=2.33ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=0.11ms | exec=0.08ms | total=0.19ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=1.08ms | exec=0.05ms | total=1.13ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.81ms | exec=0.05ms | total=0.86ms | DEADLINE MET 
+[OVERFLOW]  ts=10:12:37.239  dropped=bot  title=File:Mergus merganser merganser.jpg  queue=100/100
+[HUMAN]    it.wikipedia.org | drift=2.14ms | exec=0.06ms | total=2.20ms | DEADLINE MISS
+[HUMAN]    ja.wikipedia.org | drift=1.55ms | exec=0.04ms | total=1.59ms | DEADLINE MET 
+[OVERFLOW]  ts=10:12:37.707  dropped=bot  title=Wikipedia:Version 1.0 Editorial Team/Football season articles by quality log  queue=100/100
+[OVERFLOW]  ts=10:12:37.710  dropped=bot  title=File:JR Sagami Line Kagawa Station Gates.jpg  queue=100/100
+[OVERFLOW]  ts=10:12:37.712  dropped=bot  title=scioperatamente  queue=100/100
+[OVERFLOW]  ts=10:12:37.715  dropped=bot  title=Q139721124  queue=100/100
+[OVERFLOW]  ts=10:12:37.721  dropped=bot  title=File:Dorpskerk Spijkenisse dwarsschip, gezien in noordelijke richting - RCE.jpg  queue=100/100
+[HUMAN]    vi.wikipedia.org | drift=15.05ms | exec=0.21ms | total=15.26ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=12.57ms | exec=0.20ms | total=12.77ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=7.97ms | exec=0.16ms | total=8.13ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=0.31ms | exec=0.42ms | total=0.73ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=14.01ms | exec=0.28ms | total=14.29ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=0.33ms | exec=0.09ms | total=0.42ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=0.49ms | exec=0.06ms | total=0.55ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=3.46ms | exec=0.18ms | total=3.64ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=2.49ms | exec=0.06ms | total=2.55ms | DEADLINE MISS
+[OVERFLOW]  ts=10:12:38.265  dropped=bot  title=Q19242887  queue=100/100
+[OVERFLOW]  ts=10:12:38.266  dropped=bot  title=File:Photograph of a Typical Bread Line in the Early Stages of Relief Distribution After the 1906 San Francisco Earthquake - NARA - 306190.jpg  queue=100/100
+[OVERFLOW]  ts=10:12:38.267  dropped=bot  title=File:Austin Weekly Statesman. (Austin, Tex.), Vol. 18, No. 20, Ed. 1 Thursday, March 28, 1889 - DPLA - 7e55901f48b571607e235eb88e240464 (page 6).jpg  queue=100/100
+[HUMAN]    www.wikidata.org | drift=3.49ms | exec=0.06ms | total=3.55ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=1.22ms | exec=0.03ms | total=1.26ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=0.40ms | exec=0.05ms | total=0.45ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=6.04ms | exec=0.12ms | total=6.16ms | DEADLINE MISS
+[HUMAN]    en.wikipedia.org | drift=19.11ms | exec=0.12ms | total=19.23ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=0.63ms | exec=0.16ms | total=0.79ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=13.04ms | exec=0.29ms | total=13.33ms | DEADLINE MISS
+[OVERFLOW]  ts=10:12:38.457  dropped=bot  title=File:Dorpskerk Spijkenisse interieur 1933 vóór restauratie - gezicht naar het oosten.jpg  queue=100/100
+[OVERFLOW]  ts=10:12:38.787  dropped=bot  title=List of Kazakhstan football transfers winter 2014  queue=100/100
+[OVERFLOW]  ts=10:12:38.788  dropped=bot  title=frequenter  queue=100/100
+[OVERFLOW]  ts=10:12:38.789  dropped=bot  title=File:Siihtala.jpg  queue=100/100
+[OVERFLOW]  ts=10:12:38.792  dropped=bot  title=scioperatezza  queue=100/100
+[OVERFLOW]  ts=10:12:38.795  dropped=bot  title=User:WP 1.0 bot/Tables/Project/Football season  queue=100/100
+[HUMAN]    www.wikidata.org | drift=3.09ms | exec=0.13ms | total=3.22ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=0.33ms | exec=0.07ms | total=0.40ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=4.03ms | exec=0.05ms | total=4.08ms | DEADLINE MISS
+[HUMAN]    www.wikidata.org | drift=1.14ms | exec=0.10ms | total=1.24ms | DEADLINE MET 
+[HUMAN]    en.wikipedia.org | drift=1.39ms | exec=0.03ms | total=1.42ms | DEADLINE MET 
+[HUMAN]    www.wikidata.org | drift=1.89ms | exec=0.04ms | total=1.94ms | DEADLINE MET 
+[OVERFLOW]  ts=10:12:39.239  dropped=bot  title=File:Dorpskerk Terwolde (31352416901).jpg  queue=100/100
+[HUMAN]    www.wikidata.org | drift=0.65ms | exec=0.06ms | total=0.70ms | DEADLINE MET 
+[HUMAN]    commons.wikimedia.org | drift=0.05ms | exec=0.04ms | total=0.09ms | DEADLINE MET 
+[HUMAN]    ru.wikipedia.org | drift=4.38ms | exec=0.08ms | total=4.46ms | DEADLINE MISS
+[HUMAN]    commons.wikimedia.org | drift=5.47ms | exec=0.20ms | total=5.68ms | DEADLINE MISS
+[OVERFLOW]  ts=10:12:39.473  dropped=bot  title=File:May 1942 - Vol 4 - DPLA - 6c40eafb4616c33670b7b876cce112d6 (page 95).jpg  queue=100/100
+[OVERFLOW]  ts=10:12:39.475  dropped=bot  title=Terrorisme en 2009  queue=100/100
+[HUMAN]    commons.wikimedia.org | drift=3.30ms | exec=0.08ms | total=3.37ms | DEADLINE MISS
+[OVERFLOW]  ts=10:12:39.660  dropped=bot  title=Q19242889  queue=100/100
