@@ -1,0 +1,6 @@
+zero_copy (10000 iters): 0 allocs  0 bytes
+owned     (10000 iters): 30000 allocs  560000 bytes
+
+zero_copy: 0 heap allocs -- WikiEdit<'a> borrows &str slices from the raw buffer
+owned:     3.0 allocs/iter -- each String field heap-allocates separately
+reduction vs owned: 100%

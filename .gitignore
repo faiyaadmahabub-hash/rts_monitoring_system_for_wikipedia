@@ -1,1 +1,4 @@
 /target
+
+# Newly generated runtime logs (existing historical logs remain tracked)
+/logs/*.log
